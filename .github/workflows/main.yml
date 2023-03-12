@@ -9,10 +9,10 @@ jobs:
     name: Tests
     runs-on: [self-hosted]
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 16
       - run: yarn
       - run: yarn lint
       - run: yarn test
